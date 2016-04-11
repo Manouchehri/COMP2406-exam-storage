@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Registration #{status}
+  p Your attempt to register user #{username} has #{status}
+  form(action="/", method="get")
+        button(type="submit") Return
