@@ -11,10 +11,10 @@ var MongoStore = require('connect-mongo')(session);
 var routes = require('./routes');
 var app = express();
 
-app.locals.sslOptions = {
+/*app.locals.sslOptions = {
     key: fs.readFileSync('keys/comp2406-test-key.pem'),
     cert: fs.readFileSync('keys/comp2406-test-cert.pem')
-};
+};*/
 
 app.set('views', 'views');
 app.set('view engine', 'jade');

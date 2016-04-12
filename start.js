@@ -15,5 +15,5 @@ if (app.locals.sslOptions) {
     var server = http.createServer(app);
 }
 
-server.listen(port);
-console.log('Listening on ' + port);
+server.listen(port, process.env.IP);
+console.log('Listening on ' + port + ":" + process.env.IP);
